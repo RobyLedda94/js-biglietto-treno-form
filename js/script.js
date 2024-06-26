@@ -26,8 +26,23 @@ btn.addEventListener('click', function () {
         final_price -= discount;
     }
 
-    document.getElementById('ciccio').innerHTML = name;
+    document.getElementById('nominativo').innerHTML = name;
     document.getElementById('prezzo').innerHTML = final_price.toFixed(2);
 })
 
 
+const resetBtn = document.getElementById('resetbtn');
+resetBtn.addEventListener('click', function(){
+    
+    document.getElementById('name').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('eta').value ='';
+    console.log(name, km, eta);
+
+
+    
+
+
+    document.getElementById('nominativo').innerHTML = '';
+    document.getElementById('prezzo').innerHTML = '';
+})
