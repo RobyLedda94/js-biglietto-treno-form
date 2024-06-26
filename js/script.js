@@ -3,14 +3,14 @@
 
 
 
-// VADO A RICHIAMARE I BOTTONI E VERIFICO CON IL CONSOLE LOG SE FUNZIONA CORRETTAMENTE
+// GENERATE BTN
 
 const btn = document.getElementById('generate-price')
 btn.addEventListener('click', function () {
     let name = document.getElementById('name').value;
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').value;
-    console.log(name, km, eta);
+    
     let total_price = 0.21 * km;
 
     // CALCOLIAMO LO SCONTO IN BASE ALL'ETA'
@@ -31,13 +31,15 @@ btn.addEventListener('click', function () {
 })
 
 
+// RESET BTN
+
 const resetBtn = document.getElementById('resetbtn');
 resetBtn.addEventListener('click', function(){
     
     document.getElementById('name').value = '';
     document.getElementById('km').value = '';
     document.getElementById('eta').value ='';
-    console.log(name, km, eta);
+    
 
 
     
