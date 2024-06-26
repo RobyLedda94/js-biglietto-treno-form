@@ -5,6 +5,10 @@
 }
 
 
-h1{
-    color: red;
+.bg{
+    background-color: rgb(175 21 83);
+}
+
+.color-white{
+    color: #fff;
 }
