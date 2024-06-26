@@ -26,8 +26,11 @@ btn.addEventListener('click', function () {
         final_price -= discount;
     }
 
+    let carrozza = Math.floor(Math.random() * 10) + 1;
+
     document.getElementById('nominativo').innerHTML = name;
-    document.getElementById('prezzo').innerHTML = final_price.toFixed(2);
+    document.getElementById('carrozza').innerHTML = 'n°' + carrozza;
+    document.getElementById('prezzo').innerHTML =  '€' + final_price.toFixed(2);
 })
 
 
@@ -46,5 +49,6 @@ resetBtn.addEventListener('click', function(){
 
 
     document.getElementById('nominativo').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
     document.getElementById('prezzo').innerHTML = '';
 })
