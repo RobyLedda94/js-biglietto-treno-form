@@ -15,24 +15,31 @@
                 <h2 class="color-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <label for="" class="control-label">Nome Cognome</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Nome e Cognome">
-            </div>
-            <div class="col-12 col-md-4">
-                <label for="" class="control-label">Km da percorrere</label>
-                <input type="text" class="form-control" name="km" id="km" placeholder="Inserisci i Km">
-            </div>
-            <div class="col-12 col-md-4">
-                <label for="" class="control-label">Fascia d'età</label>
-                <select name="" id="eta" class="form-select" aria-label="Default select example">
-                    <option value="under">-18</option>
-                    <option value="normal">+18</option>
-                    <option value="over">+65</option>
-                </select>
+        <div class="container-fluid bg-white rounded py-3">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <label for="" class="control-label">Nome Cognome</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Nome e Cognome">
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="" class="control-label">Km da percorrere</label>
+                    <input type="text" class="form-control" name="km" id="km" placeholder="Inserisci i Km">
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="" class="control-label">Fascia d'età</label>
+                    <select name="" id="eta" class="form-select" aria-label="Default select example">
+                        <option value="under">-18</option>
+                        <option value="normal">+18</option>
+                        <option value="over">+65</option>
+                    </select>
+                </div>
+                <div class="col-12 mt-5">
+                    <button type="button" class="btn btn-danger mx-2">Genera</button>
+                    <button type="button" class="btn btn-danger mx-2">Annulla</button>
+                </div>
             </div>
         </div>
+
     </div>
     <script src="./js/script.js" type="text/javascript"></script>
 </body>
