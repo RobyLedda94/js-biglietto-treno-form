@@ -1,5 +1,5 @@
 // MESSAGGIO ALERT DI PROVA
-alert("Javascript calcolo biglietto treno");
+// alert("Javascript calcolo biglietto treno");
 
 
 
@@ -11,17 +11,23 @@ btn.addEventListener('click', function () {
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').value;
     console.log(name, km, eta);
+    let total_price = 0.21 * km;
 
     // CALCOLIAMO LO SCONTO IN BASE ALL'ETA'
-
+    
     let final_price = total_price;
+    
+    if (eta == 'under') {
+        let discount = total_price * 0.20;
+        final_price -= discount;
+    }
+    else if (eta == 'over') {
+        let discount = total_price * 0.40;
+        final_price -= discount;
+    }
 
-    if (eta < 18) {
-        let discount = total_price * 20;
-        final_price -= discount;
-    }
-    else if (eta > 65) {
-        let discount = total_price * 40;
-        final_price -= discount;
-    }
+    document.getElementById('ciccio').innerHTML = name;
+    document.getElementById('prezzo').innerHTML = final_price.toFixed(2);
 })
+
+
