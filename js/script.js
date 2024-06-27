@@ -17,17 +17,19 @@ btn.addEventListener('click', function () {
 
     // CALCOLIAMO LO SCONTO IN BASE ALL'ETA'
     
-    let final_price = total_price;
+    let discount = 0;
     
     if (eta == 'under') {
-        let discount = total_price * 0.8;
-        final_price -= discount;
+        discount = total_price * 0.2;
+        
 
     }
     else if (eta == 'over') {
-        let discount = total_price * 0.6;
-        final_price -= discount;
+        discount = total_price * 0.4;
+        
     }
+
+    let final_price = total_price - discount;
 
 
 
