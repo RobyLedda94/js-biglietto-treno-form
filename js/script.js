@@ -11,6 +11,8 @@ btn.addEventListener('click', function () {
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').value;
     
+
+    // CALCOLO PREZZO BASE
     let total_price = 0.21 * km;
 
     // CALCOLIAMO LO SCONTO IN BASE ALL'ETA'
@@ -18,16 +20,18 @@ btn.addEventListener('click', function () {
     let final_price = total_price;
     
     if (eta == 'under') {
-        let discount = total_price * 0.20;
-        final_price -= discount;
+        let discount = total_price * 0.8;
+        // final_price -= discount;
     }
     else if (eta == 'over') {
-        let discount = total_price * 0.40;
-        final_price -= discount;
+        let discount = total_price * 0.6;
+        // final_price -= discount;
     }
 
-    let carrozza = Math.floor(Math.random() * 10) + 1;
 
+
+    let carrozza = Math.floor(Math.random() * 10) + 1;
+    
     document.getElementById('nominativo').innerHTML = name;
     document.getElementById('carrozza').innerHTML = 'n°' + carrozza;
     document.getElementById('prezzo').innerHTML =  '€' + final_price.toFixed(2);
