@@ -21,11 +21,12 @@ btn.addEventListener('click', function () {
     
     if (eta == 'under') {
         let discount = total_price * 0.8;
-        // final_price -= discount;
+        final_price -= discount;
+
     }
     else if (eta == 'over') {
         let discount = total_price * 0.6;
-        // final_price -= discount;
+        final_price -= discount;
     }
 
 
